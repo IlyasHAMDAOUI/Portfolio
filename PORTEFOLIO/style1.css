@@ -82,6 +82,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 14px;
+
     div {
       border: 1px solid black;
       border-radius: 20px;
@@ -91,6 +92,7 @@ body {
       align-items: center;
       justify-content: center;
       height: 200px;
+      box-shadow: 4px 4px 5px 0px black;
     }
 
     p {
