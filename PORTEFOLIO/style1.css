@@ -117,42 +117,16 @@ body {
 .cardy {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-
-  section:first-of-type {
-    flex-direction: column;
-    padding: 20px;
-  }
-
   section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    column-gap: 30px;
-    div {
-      display: flex;
-      border: 1px solid black;
-      flex-flow: column wrap;
-      align-items: center;
-      width: 20%;
-      margin: 20px;
-      height: auto;
-      border-radius: 20px;
-      justify-content: center;
-      padding: 10px;
-      place-content: space-around;
-
-      img {
-        width: 70%;
-        padding: 30px;
-      }
-      div {
-        border: none;
-        width: 75%;
-      }
+    border: 1px solid black;
+    width: 20%;
+div{
+  border: 1px solid black;
+    img {
+      width: 10%;
     }
   }
+}
 }
