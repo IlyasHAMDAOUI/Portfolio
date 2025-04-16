@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="background.css" />
     <title>MuhammadPortfolio</title>
   </head>
 
@@ -53,7 +54,7 @@
       </article>
 
       <!-- Mes competences -->
-      <article class="card">
+      <article class="animationed card">
         <section>
           <h3>mes softskill</h3>
           <h2>mes competence</h2>
@@ -110,17 +111,17 @@
                 <div>
                   <img src="Canva-Logo.png" />
                   <p>Canva</p>
-                  <h6>intrmédiare</h6>
+                  <h6>intermédiare</h6>
                 </div>
                 <div>
                   <img src="word-logo.png" />
                   <p>Word</p>
-                  <h6>intrmédiare</h6>
+                  <h6>intermédiare</h6>
                 </div>
                 <div>
                   <img src="powerpoint.webp" />
                   <p>powerpoint</p>
-                  <h6>intrmédiare</h6>
+                  <h6>intermédiare</h6>
                 </div>
               </div>
             </section>
@@ -231,16 +232,47 @@
       </article>
 
       <!-- contact moi -->
-      <article class="card">
+      <article id="carder" >
         <section>
-          <h3></h3>
-          <h2 id="meContact"></h2>
+          <h3>Get in touch</h3>
+          <h2 id="meContact">Contactez Moi</h2>
         </section>
+        <!-- <form>
+          <section class="formRow1">
+            <div>
+              <div>
+                <label for="nom">nom</label>
+                <input type="text" name="nom" class="formulaire" />
+              </div>
+              <div>
+                <label for="mail">mail</label>
+                <input type="text" name="mail" class="formulaire" />
+              </div>
+            </div>
+            <div>
+              <label for="message">message</label>
+              <input type="text" name="message" class="formulaire" />
+            </div>
+          </section>
+        </form> -->
 
-        <section>
-          <h3></h3>
-          <h2></h2>
-        </section>
+        <form action="" class="card">
+          <div class="firstRow">
+              <div class="formGroup">
+                  <label for="">Nom</label><br>
+                  <input type="text">
+              </div>
+              <div class="formGroup">
+                  <label for="">Mail</label><br>
+                  <input type="email">
+              </div>
+          </div>
+          <div class="formGroup">
+              <label for="">Message</label><br>
+              <textarea name="" id="" rows="10"></textarea>
+          </div>
+          <button>Envoyer</button>
+      </form>
       </article>
     </main>
   </body>
