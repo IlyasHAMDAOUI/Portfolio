@@ -93,6 +93,15 @@
   }
 } */
 
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img{
+    width: 300px;
+
+  }
+}
 .presentation {
   display: flex;
   justify-content: center;
@@ -211,7 +220,6 @@
 
 .cadrePortfolio {
   display: flex;
-  /* flex-direction: ; */
   div {
     display: flex;
     flex-direction: column;
