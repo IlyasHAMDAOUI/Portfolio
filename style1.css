@@ -2,45 +2,7 @@
   padding: 0px;
   margin: 0px;
 }
-/* 
-.animationed {
-  background-color: #e5f4e5;
-  animation: reveal linear;
-  animation-timeline: view();
-  animation-range-start: cover(0%);
-  animation-range-end: cover(10%);
-}
 
-@keyframes scroller {
-  from {
-    background-size: 50% 5px;
-  }
-  to {
-    background-size: 100% 5px;
-  }
-}
-
-@keyframes slide {
-  from {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(100%);
-    opacity: 1;
-  }
-}
-
-@keyframes reveal {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-} */
 @keyframes animate-in-and-out {
   entry 0% {
     opacity: 0;
@@ -66,26 +28,41 @@
   animation-timeline: view();
 }
 
-/* p, h1, h2, h3, h4, h5, h6, label {
-  color: #121212;
-} */
-/* body {
-  background-color: #121212;
-
- section{
-  background-color: #EAFFD0 ;
+ body {
+  background-color: var(--second-color);
+  h1, h2{
+    color: var(--base-color);
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  h3{
+    color: var(--gray-color);
+    font-style: italic;
+    font-size: 12px;
+  }
+  h4, h6{
+    color: var(--gray-color);
+  }
+  
+  h5, p{
+    color: white;
+  }
+  
  }
+ /* section{
+  background-color: #EAFFD0 ;
+ } */
+  
+  /*
 
   
   h3 {
     text-align: center;
-    font-style: italic;
-    font-size: 12px;
+    
   }
   h2 {
     display: flex;
-    justify-content: center;
-    text-transform: uppercase;
+    
   }
   h6 {
     font-size: 10px;
@@ -93,13 +70,12 @@
   }
 } */
 
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  img{
-    width: 300px;
-
+  img {
+    width: 60%;
   }
 }
 .presentation {
@@ -122,13 +98,15 @@
       margin: 10px;
     }
     div {
+      align-self: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-
+      flex-wrap: wrap;
+      align-items: center;
       p {
         font-size: small;
         padding: 20px;
+        align-self: center;
       }
 
       button {
@@ -156,6 +134,8 @@
   justify-items: center;
   flex-direction: column;
   width: 50%;
+  border-radius: 20px;
+  background: var(--font-carte);
   h4 {
     align-self: center;
   }
@@ -164,7 +144,7 @@
 .carte {
   display: flex;
   padding: 10px;
-  border: 1px solid black;
+  justify-content: center;
   gap: 10px;
   width: 80%;
   align-self: center;
@@ -172,7 +152,7 @@
   div {
     display: flex;
     flex-flow: column wrap;
-    border: 1px solid black;
+    border: 1px solid var(--base-color);
     border-radius: 10px;
     justify-content: center;
     align-content: center;
@@ -193,30 +173,6 @@
     align-self: center;
   }
 }
-.carte2 {
-  display: flex;
-  padding: 10px;
-  /* border: 1px solid black; */
-  gap: 10px;
-  width: 80%;
-  align-self: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  div {
-    display: flex;
-    flex-flow: column wrap;
-    border: 1px solid black;
-    border-radius: 10px;
-    justify-content: center;
-    align-content: center;
-    padding: 20px;
-    width: 50%;
-    align-items: center;
-    img {
-      width: 50%;
-    }
-  }
-}
 
 .cadrePortfolio {
   display: flex;
@@ -229,6 +185,7 @@
     align-items: center;
   }
 }
+
 .cartePortfolio {
   display: flex;
   padding: 10px;
@@ -252,51 +209,8 @@
   flex-direction: row;
   align-items: center;
   place-content: center;
+  gap: 50px;
 }
-
-/* 
-.cardy {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-
-  section:first-of-type {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    column-gap: 30px;
-    div {
-      display: flex;
-      border: 1px solid black;
-      flex-flow: column wrap;
-      align-items: center;
-      width: 20%;
-      margin: 20px;
-      height: auto;
-      border-radius: 20px;
-      justify-content: center;
-      padding: 10px;
-      place-content: space-around;
-
-      img {
-        width: 70%;
-        padding: 30px;
-      }
-      div {
-        border: none;
-        width: 75%;
-      }
-    }
-  }
-} */
 
 .formRow1 {
   display: flex;
@@ -359,8 +273,10 @@ button:hover span:after {
   right: 0;
 }
 
+
+/* pour les telephone */
 @media only screen and (max-width: 600px) {
-  .card {
+  /* .card {
     flex-direction: column;
   }
   .softskill {
@@ -368,5 +284,178 @@ button:hover span:after {
   }
   #AProposDeMoi {
     flex-direction: column;
+  }*/
+} 
+
+/* #parcours .carte {
+  border: none;
+  justify-content: center;
+  div {
+    padding: 20px;
+    width: 50%;
+    align-items: center;
+  }
+} */
+
+
+
+
+
+
+/* variable */
+/* 
+:root{
+  --base-color: #03bbf3;
+  --gray-color: #8f8f8f;
+  --second-color: #23242a;
+  --font-carte: #1c1c1c;
+} */
+
+/* formulaire
+
+.formuly{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--second-color);
+
+}
+
+.box{
+  position: relative;
+  width: 380px;
+height: 420px;
+background: var(--font-carte);
+border-radius: 8px;
+overflow: hidden;
+
+}
+.box::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent,
+   var(--base-color), var(--base-color));
+   animation: animate 6s linear infinite;
+   transform-origin: bottom right;
+}
+
+.box::after{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent,
+   var(--base-color), var(--base-color));
+   animation: animate 6s linear infinite;
+   transform-origin: bottom right;
+   animation-delay: -3s;
+}
+
+@keyframes animate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
   }
 }
+
+.form{
+position: absolute;
+background: #28292d;
+z-index: 10;
+border-radius: 8px;
+padding: 50px 40px;
+display: flex;
+flex-direction: column;
+inset: 2px;
+}
+
+.form h2{
+color: var(--base-color);
+font-weight: 500;
+text-align: center;
+letter-spacing: .1rem;
+}
+
+.form-group{
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+
+.form-group input{
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+background: transparent;
+border: none;
+outline: none;
+color: var(--second-color);
+font-size: 1rem;
+letter-spacing: .05rem;
+z-index: 10;
+}
+
+.form-group label{
+  position: absolute;
+  left: 0;
+  padding: 20px 0 10px;
+  font-size: 1rem;
+  color: var(--gray-color);
+  pointer-events: none;
+  letter-spacing: .05rem;
+  transition: 0.5s;
+
+}
+
+.form-group input:valid ~ label,
+.form-group input:focus ~ label{
+color: var(--base-color);
+font-size: 0.75rem;
+transform: translateY(-34px);
+}
+
+.form-group i{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  height: 2Px;
+  background: var(--base-color);
+  border-radius: 4px;
+  transition: .5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.form-group input:valid ~ i,
+.form-group input:focus ~ i{
+height: 44px;
+}
+
+.links{
+  display: flex;
+  font-weight: 600;
+  background: var(--base-color);
+  padding: 11px 25px;
+width: 56px;
+margin-top: 10px;
+border-radius: 4px;
+cursor: pointer;
+a{
+  text-decoration: none;
+  color: var(--second-color);
+}
+}
+
+.links:active{
+  opacity: 0.2;
+} */
