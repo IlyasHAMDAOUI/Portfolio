@@ -570,7 +570,7 @@ h4, h5, h6, p {
 
   .montagne {
     height: auto;
-    min-height: 100vh;
+    min-height: 27vh;
     padding: 20px;
     
     div {
@@ -682,12 +682,12 @@ h4, h5, h6, p {
     }
   }
 
-/* 
+
   .d-link, 
   .animationed,
   #list-view article {
     animation: none ;
-  } */
+  }
 
 .btn {
   padding: 12px 20px;
