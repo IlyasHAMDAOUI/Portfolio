@@ -282,21 +282,31 @@ body {
     color: var(--base-color);
     justify-content: center;
     text-transform: uppercase;
+    font-family: "Space Grotesk", sans-serif;
   }
   h3 {
     color: var(--gray-color);
     font-style: italic;
     font-size: 12px;
+    font-family: "Inter", sans-serif;
   }
   h4,
   h6 {
     color: var(--gray-color);
+    font-family: "Inter", sans-serif;
+    font-style: normal;
   }
 
   h5,
   p {
     color: white;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
   }
+}
+.softskill p{
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
 }
 
 .hero {
@@ -500,94 +510,93 @@ footer {
   section {
     display: flex;
     flex-direction: row;
-   
-    
+
     gap: 30px;
-    
-    p{
-      
+
+    p {
       font-size: 24px;
-    font-weight: 600;
-    
+      font-weight: 600;
     }
   }
 }
-footer a{
+footer a {
   text-decoration: none;
   color: var(--second-color);
 }
-footer h2{
+footer h2 {
   color: var(--second-color);
 }
 
-svg{
+svg {
   position: relative;
   top: 30px;
   width: 100%;
 }
 
-
 @media only screen and (max-width: 600px) {
-* {
-  box-sizing: border-box;
-}
+  * {
+    box-sizing: border-box;
+  }
 
+  body {
+    background-color: var(--second-color);
+    font-size: 16px;
+    line-height: 1.5;
+  }
 
-body {
-  background-color: var(--second-color);
-  font-size: 16px;
-  line-height: 1.5;
-}
+  h1,
+  h2 {
+    color: var(--base-color);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
 
-h1, h2 {
-  color: var(--base-color);
-  text-transform: uppercase;
-  font-size: 1.8rem;
-}
+  h3 {
+    color: var(--gray-color);
+    font-style: italic;
+    font-size: 0.75rem;
+  }
 
-h3 {
-  color: var(--gray-color);
-  font-style: italic;
-  font-size: 0.75rem;
-}
+  h4,
+  h5,
+  h6,
+  p {
+    color: white;
+    font-size: 1rem;
+  }
 
-h4, h5, h6, p {
-  color: white;
-  font-size: 1rem; 
-}
-
-  .card, 
+  .card,
   .softskill,
   #AProposDeMoi,
   .presentation section,
   .arrangement,
   #arrangementPortfolio {
     flex-direction: column;
-    width: 100% ;
-    padding: 10px ;
-    gap: 15px ;
+    width: 100%;
+    padding: 10px;
+    gap: 15px;
   }
 
   .montagne {
     height: auto;
     min-height: 27vh;
     padding: 20px;
-    
+
     div {
-      margin-left: 0 ;
+      margin-left: 0;
       height: auto;
       justify-content: center;
     }
-    
+
     img {
-      width: 80px ;
+      width: 80px;
     }
   }
 
   #navigation {
     margin-top: 0;
     position: relative;
-    
+
     ul {
       flex-direction: column;
       gap: 10px;
@@ -596,62 +605,63 @@ h4, h5, h6, p {
   }
 
   .presentation {
-    padding: 20px 0 ;
+    padding: 20px 0;
     margin-bottom: 50px;
-    
+
     section {
       width: 95%;
-      
+
       img {
-        width: 80% ;
+        width: 80%;
         margin: 0 auto 20px;
       }
-      
+
       div {
-        width: 100% ;
+        width: 100%;
         p {
-          padding: 10px ;
+          padding: 10px;
         }
       }
     }
   }
 
   .carte {
-    width: 100% ;
-    
+    width: 100%;
+
     div {
-      width: 80% ;
+      width: 80%;
       margin-bottom: 15px;
     }
   }
 
-  .cadre, .cadre2 {
-    width: 100% ;
+  .cadre,
+  .cadre2 {
+    width: 100%;
     margin: 10px 0;
   }
 
   .cadrePortfolio div {
-    width: 100% ;
+    width: 100%;
   }
 
   .formuly {
     padding: 20px;
   }
-  
-  .box, 
-  .box::before, 
+
+  .box,
+  .box::before,
   .box::after {
     width: 100%;
     height: auto;
   }
-  
+
   .form {
     padding: 30px 20px;
     position: relative;
   }
-  
+
   .form-group {
-    width: 100% ;
+    width: 100%;
   }
 
   .btn {
@@ -660,51 +670,52 @@ h4, h5, h6, p {
   }
 
   .hero {
-    padding: 100px 20px ;
-    
+    padding: 100px 20px;
+
     img {
-      width: 100% ;
+      width: 100%;
     }
   }
 
   footer {
     height: auto;
     padding: 40px 20px;
-    
+
     section {
       flex-direction: column;
       align-items: center;
       gap: 15px;
-      
+
       p {
-        font-size: 1rem ;
+        font-size: 1rem;
       }
     }
   }
 
-
-  .d-link, 
+  .d-link,
   .animationed,
   #list-view article {
-    animation: none ;
+    animation: none;
   }
 
-.btn {
-  padding: 12px 20px;
-  font-size: 1rem;
-}
+  .btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-input, textarea, button {
-  min-height: 44px ;
-  font-size: 1rem ;
-}
+  input,
+  textarea,
+  button {
+    min-height: 44px;
+    font-size: 1rem;
+  }
 
-.mobile-hidden {
-  display: none ;
-}
+  .mobile-hidden {
+    display: none;
+  }
 }
