@@ -307,6 +307,7 @@ body {
 .softskill p{
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .hero {
