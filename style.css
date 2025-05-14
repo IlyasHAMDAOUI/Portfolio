@@ -33,10 +33,27 @@
   box-shadow: 0 0 15px #00000080;
 }
 
+@keyframes scroll {
+  form {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
 .d-link {
-  animation: scroller linear;
+  animation: scroll linear;
   animation-timeline: view();
   animation-range: entry 0 cover 50%;
+}
+
+.scroll-list__wrp{
+  width: 100%; height: 700px;
+  overflow: auto; padding: 50px;
+
 }
 
 .montagne {
@@ -304,7 +321,7 @@ body {
     font-style: normal;
   }
 }
-.softskill p{
+.softskill p {
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
